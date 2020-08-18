@@ -1,0 +1,38 @@
+<h2 *ngIf="noStoredName">
+  Howdy, stranger. Haven't seen your face around here before. What's your name?
+</h2>
+
+<div class="subFlex1">
+  <input
+    [(ngModel)]="inputValue"
+    type="text"
+    placeholder="Enter your name"
+    id="x"
+  />
+  <button *ngIf="noStoredName" (click)="addName(inputValue)">
+    Add your name
+  </button>
+  <button
+    ngDefaultControl
+    [(ngModel)]="inputValue"
+    (click)="addName(inputValue)"
+  >
+    Change your name
+  </button>
+</div>
+
+<p *ngIf="finnsName">Alright Mr. {{ firstName }}, what can I do you for?</p>
+
+<app-beverages
+  (sendBeverage)="handleBeverage($event)"
+  *ngIf="finnsName"
+></app-beverages>
+
+<p *ngIf="gotBeverage">One {{ beverage }}, coming right up!</p>
+
+<app-the-usual
+  *ngIf="noStoredBeverage"
+  [beverageValue]="storedBeverage"
+  (sendStoredBeverage)="gotStoredBeverage($event)"
+>
+</app-the-usual>

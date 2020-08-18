@@ -1,0 +1,29 @@
+ul {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+li {
+  font-family: "Caveat", cursive;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+li:hover {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.2em;
+}
+fieldset {
+  text-align: center;
+}

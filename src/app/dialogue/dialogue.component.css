@@ -1,0 +1,47 @@
+h2 {
+  font-family: "Do Hyeon", sans-serif;
+  margin-top: 20px;
+}
+
+.subFlex1 {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 10px auto 0;
+  flex-direction: column;
+}
+
+#x {
+  margin: 10px auto;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  padding: 5px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+button {
+  font-size: 1.1em;
+  padding: 5px;
+  font-family: "Do Hyeon", sans-serif;
+  border: 0.1em solid black;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px #888888;
+  background-color: springgreen;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  font-size: 1.5em;
+}

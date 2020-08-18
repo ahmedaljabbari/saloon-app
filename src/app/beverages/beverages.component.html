@@ -1,0 +1,13 @@
+<fieldset>
+  <legend><p>Select beverage</p></legend>
+  <div class="listContainer">
+    <ul>
+      <li
+        *ngFor="let beverageList of beverageList"
+        (click)="choosenBeverage(beverageList)"
+      >
+        {{ beverageList.val }}
+      </li>
+    </ul>
+  </div>
+</fieldset>
