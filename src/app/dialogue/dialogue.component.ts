@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
 import { userInformationService } from "../user-information.service";
+import * as $ from "jquery";
 
 @Component({
   selector: "app-dialogue",
@@ -24,6 +25,11 @@ export class DialogueComponent implements OnInit {
   handleBeverage(gotBeverage: string) {
     this.beverage = gotBeverage;
     this.gotBeverage = true;
+  }
+  //jquery
+  hid() {
+    $("#greet").fadeOut();
+    $("#addBtn").fadeOut();
   }
 
   storedBeverage: string;

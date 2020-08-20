@@ -40,6 +40,7 @@ export class BeveragesComponent implements OnInit {
     this.selectedBeverage = beverageList.val;
     this.sendBeverage.emit(this.selectedBeverage);
     this.userInfo.saveBeverage(beverageList.val);
+    alert("One " + this.selectedBeverage + ", coming right up!");
   }
 
   constructor(private userInfo: userInformationService) {}
